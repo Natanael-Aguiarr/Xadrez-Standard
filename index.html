@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>Xadrez para TDAH</title>
+    <link rel="shortcut icon" href="LogoXadrez.png">
+    <link rel='stylesheet' type='text/css' href='style.css'>
+</head>
+
+<body class="background">
+    <h1 class="title">Standard
+
+    </h1>
+    
+
+    <div class="modal-container">
+        <div class="modal">
+            <h2>Info</h2>
+            <hr /><span class="message"></span>
+            <hr />
+
+            <div class="modal-btns">
+                <button class="btn-rook" onclick="pawnToRook()">Torre</button>
+                <button class="btn-knight" onclick="pawnToKnight()">Cavalo</button>
+                <button class="btn-bishop" onclick="pawnToBishop()">Bispo</button>
+                <button class="btn-queen" onclick="pawnToQueen()">Dama</button>
+                <button class="btn-close" onclick="closeBtn()">Fechar</button>
+                <button class="btn-refresh" onclick="refresh()">Reiniciar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="window-btns">
+        <button class="btn-refresh" id="1" onclick="refresh()">Reiniciar</button><br>
+        <button class="btn-undo" id="2" onclick="undo()">Voltar</button>
+    </div>
+    <table id="chessBoard"></table>
+    <script type='text/javascript' src='script.js'></script>
+</body>
+
+</html>
